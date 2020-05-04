@@ -1,128 +1,147 @@
-[
-	{
-		"name": "Sorento's Dead End Symphony",
-		"source": "Homebrew",
-		"page": 1,
-		"level": 5,
-		"school": "I",
-		"time": [
+{
+	"_meta": {
+		"sources": [
 			{
-				"number": 1,
-				"unit": "action"
-			}
-		],
-		"range": {
-			"type": "point",
-			"distance": {
-				"type": "feet",
-				"amount": 60
-			}
-		},
-		"components": {
-			"v": true,
-			"s": true
-		},
-		"duration": [
-			{
-				"type": "timed",
-				"duration": {
-					"type": "minute",
-					"amount": 1
-				},
-				"concentration": true
-			}
-		],
-		"entries": [
-			"A symphony of deadly notes is played from your bardic instrument, directly afecting the mind of a creature you can see within range. The creature is afected even if it can't hear the symphony. The target must make a Wisdom saving throw. On a successful save, the target takes {@damage 2d8} psychic damage, and the spell ends. On a failed save, the target takes {@damage 4d8} psychic damage, and until the spell ends, you can use your action on each of your turns to automatically deal {@damage 4d8} psychic damage to the target. The spell ends if you use your action to do anything else, if the target is ever outside the spell's range, or if the target leave your sight. If the target take damage this way, at the start of its next turn it must roll a {@dice d8} to determine how its sanity will be affected that turn.",
-			{
-				"type": "table",
-				"caption": "Sanity Effect",
-				"colLabels": [
-					"{@dice d8}",
-					"Effect"
+				"json": "Pomc's Homebrew",
+				"abbreviation": "POMCH",
+				"full": "Arcane Grimoire",
+				"authors": [
+					"Pomc"
 				],
-				"colStyles": [
-					"col-1 text-center",
-					"col-11"
-				],
-				"rows": [
-					[
-						{
-							"type": "cell",
-							"roll": {
-								"exact": 1
-							}
-						},
-						"The creature waste its action doing nothing."
-					],
-					[
-						{
-							"type": "cell",
-							"roll": {
-								"exact": 2
-							}
-						},
-						"The creature become {@condition frightened} from you until the start of its next turn."
-					],
-					[
-						{
-							"type": "cell",
-							"roll": {
-								"exact": 3
-							}
-						},
-						"The creature become {@condition charmed} by you until the start of its next turn."
-					],
-					[
-						{
-							"type": "cell",
-							"roll": {
-								"exact": 4
-							}
-						},
-						"The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn."
-					],
-					[
-						{
-							"type": "cell",
-							"roll": {
-								"min": 5,
-								"max": 8
-							}
-						},
-						"The creature can act and move normally."
-					]
-				]
-			},
-		],
-		"entriesHigherLevel": [
-			{
-				"type": "entries",
-				"name": "At Higher Levels",
-				"entries": [
-					"When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 4d8;2d8|5-9|1d8} for each slot level above 5th."
-				]
+				"version": "1.0",
+				"url": "https://github.com/SeleneSofi/DnD-5e-Homebrew",
+				"targetSchema": "1.0.0"
 			}
 		],
-		"damageInflict": [
-			"psychic"
-		],
-		"savingThrow": [
-			"wisdom"
-		],
-		"miscTags": [
-			"SGT"
-		],
-		"areaTags": [
-			"ST"
-		],
-		"classes": {
-			"fromClassList": [
+		"dateAdded": 1557088580,
+		"dateLastModified": 1557088580
+	},
+	"spell": [
+		{
+			"name": "Sorento's Dead End Symphony",
+			"source": "Homebrew",
+			"page": 1,
+			"level": 5,
+			"school": "I",
+			"time": [
 				{
-					"name": "Bard",
-					"source": "PHB"
+					"number": 1,
+					"unit": "action"
 				}
-			]
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A symphony of deadly notes is played from your bardic instrument, directly afecting the mind of a creature you can see within range. The creature is afected even if it can't hear the symphony. The target must make a Wisdom saving throw. On a successful save, the target takes {@damage 2d8} psychic damage, and the spell ends. On a failed save, the target takes {@damage 4d8} psychic damage, and until the spell ends, you can use your action on each of your turns to automatically deal {@damage 4d8} psychic damage to the target. The spell ends if you use your action to do anything else, if the target is ever outside the spell's range, or if the target leave your sight. If the target take damage this way, at the start of its next turn it must roll a {@dice d8} to determine how its sanity will be affected that turn.",
+				{
+					"type": "table",
+					"caption": "Sanity Effect",
+					"colLabels": [
+						"{@dice d8}",
+						"Effect"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 1
+								}
+							},
+							"The creature waste its action doing nothing."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 2
+								}
+							},
+							"The creature become {@condition frightened} from you until the start of its next turn."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 3
+								}
+							},
+							"The creature become {@condition charmed} by you until the start of its next turn."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 4
+								}
+							},
+							"The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"min": 5,
+									"max": 8
+								}
+							},
+							"The creature can act and move normally."
+						]
+					]
+				},
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 4d8;2d8|5-9|1d8} for each slot level above 5th."
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
 		}
-	}
-]
+	]
+}
